@@ -1,27 +1,18 @@
-import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-
-const {height} = Dimensions.get('screen');
+import React, { useRef } from 'react';
+import { fettiHook } from './hooks/fettiHook';
+import { Text } from 'react-native';
+import { useCountdown } from '@kfiros/react-countdown-hook';
+import Confetti from 'react-native-magic-confetti';
+import FastImage from 'react-native-fast-image';
+import globe.png from './assets';
+import mic.png from './assets';
+import record.png from './assets';
+import headphones.png from './assets';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.center}>
-        <Text>Hello React Native Web!!!</Text>
-      </View>
-    </View>
+  <fettiHook />
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    height,
-  },
-  center: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+}
 
 export default App;
