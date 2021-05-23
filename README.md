@@ -1,2 +1,3 @@
 # Countdown
-Countdown timer for Onlyspitters React Native app
+Countdown timer for Onlyspitters Website
+React Native Web App
